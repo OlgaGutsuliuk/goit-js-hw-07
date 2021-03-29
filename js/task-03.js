@@ -18,7 +18,7 @@ const images = [
 
 const ulGallery = document.querySelector('#gallery');
 
-const array = images.map(el =>{
+images.forEach(el =>{
 const liEl = `<li class="cat"> <img class="card" src= "${el.url}" alt="${el.alt}"> </li>`    
 ulGallery.insertAdjacentHTML('beforeend', liEl)
 })
